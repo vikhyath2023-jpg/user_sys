@@ -3,10 +3,24 @@ package com.example;
 import java.util.*;
 
 public class App {
-    public List<String> getRecommendations(String userType) {
-        if (userType.equals("Action")) {
-            return Arrays.asList("Avengers", "Batman");
+
+    public String registerUser(String name, String email, String phone) {
+
+        
+        if (name == null || !name.matches("[a-zA-Z]+")) {
+            return "Invalid Name";
         }
-        return Arrays.asList("General Movie");
+
+        
+        if (email == null || !email.contains("@") || !email.endsWith(".com")) {
+            return "Invalid Email";
+        }
+
+        
+        if (phone == null || !phone.matches("\\d{10}")) {
+            return "Invalid Phone";
+        }
+
+        return "Registration Successful";
     }
 }

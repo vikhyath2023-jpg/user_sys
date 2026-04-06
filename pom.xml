@@ -7,7 +7,7 @@
 
     <!-- Project Details -->
     <groupId>com.example</groupId>
-    <artifactId>recommendation-system</artifactId>
+    <artifactId>user-registration-system</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Java Version -->
@@ -19,7 +19,7 @@
     <!-- Dependencies -->
     <dependencies>
 
-        <!-- JUnit (for testing) -->
+        <!-- JUnit Dependency -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
